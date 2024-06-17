@@ -22,7 +22,7 @@
 }
 
 .btn-type--primary {
-  background-color: $violet;
+  background-color: $violet !important;
   border: none;
   & .btn__icon {
     color: white !important;
@@ -31,12 +31,12 @@
     color: $violet !important;
   }
   &:hover {
-    background-color: $grayDark;
+    background-color: $grayDark !important;
     outline: 3px solid $violet;
   }
 }
 .btn-type--secondary {
-  background-color: $grayDark;
+  background-color: $grayDark !important;
   border: none;
   outline: 3px solid $violet;
   & .btn__icon {
@@ -46,7 +46,7 @@
     color: white !important;
   }
   &:hover {
-    background-color: $violet;
+    background-color: $violet !important;
     outline: none;
   }
 }

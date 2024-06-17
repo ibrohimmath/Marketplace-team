@@ -1,0 +1,32 @@
+@import "../../../styles/variables.scss";
+
+.content {
+  border-radius: 0 0 20px 20px;
+  background-color: $grayMedium;
+  padding: 1.25rem;
+}
+.content-trending {
+  border-radius: 0;
+  background-color: inherit;
+}
+.grid-triple {
+  height: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.grid-card {
+  height: 100%;
+  border-radius: 20px;
+  background-color: $violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.nft-flex {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

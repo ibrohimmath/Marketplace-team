@@ -1,0 +1,26 @@
+.img-full {
+  display: block;
+  width: 100%;
+  max-height: inherit;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+.img-square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+}
+.img-avatar {
+  min-height: 1rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+img {
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}

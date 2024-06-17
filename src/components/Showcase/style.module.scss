@@ -1,0 +1,9 @@
+.showcase {
+  padding: 5rem 0 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+  @media (max-width: 840px) {
+    grid-template-columns: 1fr;
+  }
+}
