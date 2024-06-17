@@ -35,6 +35,7 @@ export const Type = {
 // style - qo'shimcha stillar (margin, text-align, etc)
 
 // Buttonni ishlatish
+// import { Button, Size, Type } from "<Button linki>"
 // <Button size={Size.default} type={Type.default} icon={<Icon adresi>} text={<Beriladigan tekst>} style={{...}} />
 function Button({
   size = Size.default,
