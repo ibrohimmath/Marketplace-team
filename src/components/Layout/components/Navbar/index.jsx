@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 import { H5 } from "../../../Typography";
 import { Button, Type, Size } from "../../../Button";
@@ -26,28 +27,30 @@ function Nav() {
 
         <ul className={clsx(cn["nav__list"])}>
           <li className={clsx(cn["nav__item"])}>
-            <a href="#">Marketplace</a>
+            <Link to="/marketplace">Marketplace</Link>
           </li>
           <li className={clsx(cn["nav__item"])}>
-            <a href="#">Rankings</a>
+            <Link to="/rankings">Rankings</Link>
           </li>
           <li className={clsx(cn["nav__item"])}>
-            <a href="#">Connect a wallet</a>
+            <Link to="/connect-wallet">Connect a wallet</Link>
           </li>
-          <Button
-            size={Size.lg}
-            type={Type.primary}
-            icon={
-              <i
-                className="fa-regular fa-user"
-                style={{
-                  display: "block",
-                  backgroundColor: "inherit",
-                }}
-              ></i>
-            }
-            text={"Sign up"}
-          />
+          <Link to="/create-account">
+            <Button
+              size={Size.lg}
+              type={Type.primary}
+              icon={
+                <i
+                  className="fa-regular fa-user"
+                  style={{
+                    display: "block",
+                    backgroundColor: "inherit",
+                  }}
+                ></i>
+              }
+              text={"Sign up"}
+            />
+          </Link>
         </ul>
       </nav>
     </header>
