@@ -1,0 +1,46 @@
+// Variable lardan foydalanish uchun ulanish
+@import "./variables.scss";
+
+// Fontlarni ulash
+// Work Sans ni ulash
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+// Space Mono ni ulash
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+
+// Global umumiy stillar, App jsx da chaqiramiz
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $grayDark;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// Shu klassni chaqirish bilan berilgan elementni DOM dan olib tashlaymiz
+.hidden {
+  display: none;
+}
+
+// 1rem ni responsiv qilish
+html {
+  font-size: 16px;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 780px) {
+    font-size: 12px;
+  }
+  @media (max-width: 540px) {
+    font-size: 10px;
+  }
+}

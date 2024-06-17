@@ -1,0 +1,56 @@
+@import "../styles/variables.scss";
+
+.btn {
+  border-radius: 20px;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &.btn-size--sm {
+    padding: 0.6rem 3rem;
+  }
+  &.btn-size--md {
+    padding: 0.8rem 3rem;
+  }
+  &.btn-size--lg {
+    padding: 1rem 3rem;
+  }
+}
+
+.btn-type--primary {
+  background-color: $violet;
+  border: none;
+  & .btn__icon {
+    color: white !important;
+  }
+  &:hover .btn__icon {
+    color: $violet !important;
+  }
+  &:hover {
+    background-color: $grayDark;
+    outline: 3px solid $violet;
+  }
+}
+.btn-type--secondary {
+  background-color: $grayDark;
+  border: none;
+  outline: 3px solid $violet;
+  & .btn__icon {
+    color: $violet !important;
+  }
+  &:hover .btn__icon {
+    color: white !important;
+  }
+  &:hover {
+    background-color: $violet;
+    outline: none;
+  }
+}
+.btn__icon {
+  display: block;
+  background-color: inherit;
+}
