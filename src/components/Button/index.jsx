@@ -25,11 +25,13 @@ export const Type = {
   default: "btn-type--primary",
   primary: "btn-type--primary",
   secondary: "btn-type--secondary",
+  tertiary: "btn-type--tertiary",
 };
 
 // size - 3 ta o'lchamdan bittasini tanlaymiz
 // type - primary ni tanlasak binafsharang formatda,
 //        secondary ni tanlasak background black va border binafsharang formatda bo'ladi
+//        tertiary ni tanlasak background white va color black formatda bo'ladi
 // icon - button da turishi lozim bo'lgan icon linki
 // text - button ichida turishi lozim bo'lgan text
 // style - qo'shimcha stillar (margin, text-align, etc)
@@ -42,10 +44,14 @@ function Button({
   type = Type.default,
   icon,
   text,
+  className = "",
   style,
 }) {
   return (
-    <button className={clsx(cn["btn"], cn[size], cn[type])} style={style}>
+    <button
+      className={clsx(cn["btn"], cn[size], cn[type], className)}
+      style={style}
+    >
       {size === "btn-size--lg" ? (
         <H5>
           <span className={clsx(cn["btn__icon"])}>{icon}</span>

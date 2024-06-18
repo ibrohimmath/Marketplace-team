@@ -1,0 +1,37 @@
+@import "../styles/variables.scss";
+
+.nft {
+  padding: 4rem 0;
+}
+.nft-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+.btn__eye {
+  display: block;
+  color: $violet;
+  transition: 0.4s;
+}
+button:hover .btn__eye {
+  color: white;
+}
+.nft-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+  gap: 2.5rem 1.5rem;
+}

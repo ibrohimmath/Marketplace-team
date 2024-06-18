@@ -2,13 +2,14 @@
 
 .btn {
   border-radius: 20px;
+  width: fit-content;
   color: white;
   transition: 0.4s;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 
   &.btn-size--sm {
     padding: 0.6rem 3rem;
@@ -24,10 +25,12 @@
 .btn-type--primary {
   background-color: $violet !important;
   border: none;
-  & .btn__icon {
+  .btn__icon {
+    display: block;
     color: white !important;
   }
   &:hover .btn__icon {
+    display: block;
     color: $violet !important;
   }
   &:hover {
@@ -39,10 +42,12 @@
   background-color: $grayDark !important;
   border: none;
   outline: 3px solid $violet;
-  & .btn__icon {
+  .btn__icon {
+    display: block;
     color: $violet !important;
   }
   &:hover .btn__icon {
+    display: block;
     color: white !important;
   }
   &:hover {
@@ -50,7 +55,32 @@
     outline: none;
   }
 }
+.btn-type--tertiary {
+  background-color: white !important;
+  color: black !important;
+  span,
+  div {
+    color: black !important;
+  }
+  border: none;
+  .btn__icon {
+    display: block;
+    color: $violet !important;
+  }
+  &:hover .btn__icon {
+    display: block;
+    color: white !important;
+  }
+  &:hover {
+    background-color: $grayDark !important;
+    color: white !important;
+    outline: 3px solid $violet;
+  }
+}
 .btn__icon {
   display: block;
   background-color: inherit;
+  i {
+    color: inherit;
+  }
 }
