@@ -4,10 +4,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import CreateAccount from "./pages/create_account";
 import Marketplace from "./pages/marketplace";
-
-import "./components/styles/global.scss";
 import Rankings from "./pages/rankings";
 import ConnectWallet from "./pages/connect_wallet";
+import Artist from "./pages/artist";
+
+import "./components/styles/global.scss";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "connect-wallet",
     element: <ConnectWallet />,
+  },
+  {
+    path: "artist",
+    element: <Artist />,
   },
 ]);
 

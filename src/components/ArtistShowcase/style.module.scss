@@ -1,0 +1,28 @@
+.artist-showcase {
+  height: 50vh;
+  position: relative; /* Allows positioning of the gradient overlay */
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%; /* Ensure the image covers the entire container */
+    object-position: center;
+    object-fit: cover;
+  }
+
+  /* This pseudo-element will be used to apply the gradient */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(151, 71, 255, 0) 21.88%,
+      #9747ff 95.31%
+    );
+    z-index: 1; /* Ensure the gradient is above the img */
+  }
+}

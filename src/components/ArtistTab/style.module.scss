@@ -1,0 +1,44 @@
+@import "../styles/variables.scss";
+
+.artist-tab {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.artist-tab__item {
+  padding: 1rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  * {
+    color: #858584;
+  }
+  transition: 0.4s;
+  &:hover {
+    border-bottom: 2px solid #858584;
+    color: #000;
+    * {
+      color: white;
+    }
+    .artist-tab-num {
+      background-color: #858584;
+    }
+  }
+}
+.artist-tab__item--selected {
+  border-bottom: 2px solid #858584;
+  color: #000;
+  * {
+    color: white;
+  }
+  .artist-tab-num {
+    background-color: #858584;
+  }
+}
+.artist-tab-num {
+  background-color: $grayMedium;
+  border-radius: 20px;
+  padding: 0.2rem 0.5rem;
+  color: white !important;
+}
