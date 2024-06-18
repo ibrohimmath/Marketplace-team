@@ -1,0 +1,40 @@
+.creators {
+  padding: 4rem 0;
+}
+.flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  @media (max-width: 780px) {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.btn__rocket {
+  font-size: 0.8rem;
+  color: var(--main-color);
+  transition: 0.4s;
+}
+button:hover .btn__rocket {
+  color: white;
+}
+.grid-creators {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem 2rem;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 840px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

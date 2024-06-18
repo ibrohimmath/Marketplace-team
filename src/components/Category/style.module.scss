@@ -1,0 +1,21 @@
+.category {
+  padding: 4rem 0;
+}
+.grid-categories {
+  margin-top: 3.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 840px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  gap: 2.5rem 1.5rem;
+}

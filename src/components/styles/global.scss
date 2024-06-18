@@ -30,6 +30,11 @@ li {
   display: none;
 }
 
+// Shu klassni qo'shish bilan contentni blok ichida markaziy joyga qo'yamiz
+.center {
+  text-align: center;
+}
+
 // 1rem ni responsiv qilish
 html {
   font-size: 16px;
