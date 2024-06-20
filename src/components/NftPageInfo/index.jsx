@@ -37,7 +37,7 @@ function NftPageInfo({ style }) {
           <div className={clsx(cn["grid_c"])}>
             <H5
               fontFamily={FontFamily.primary}
-              boldness={Boldness.normal}
+              boldness={Boldness.bold}
               style={{ marginTop: "1rem", color: "#858584" }}
             >
               Created by
@@ -112,7 +112,7 @@ function NftPageInfo({ style }) {
         <div className={clsx(cn["nft-page__desription"])}>
           <H5
             fontFamily={FontFamily.primary}
-            boldness={Boldness.normal}
+            boldness={Boldness.bold}
             style={{ marginTop: "2.5rem", color: "#858584" }}
           >
             Description
@@ -148,6 +148,84 @@ function NftPageInfo({ style }) {
             could only get an eye into Orbitian territory, so they've taken to
             make human beings their target.
           </Base>
+          <H5
+            fontFamily={FontFamily.primary}
+            boldness={Boldness.bold}
+            style={{ marginTop: "2rem", color: "#858584" }}
+          >
+            Details
+          </H5>
+          <H5
+            fontFamily={FontFamily.secondary}
+            boldness={Boldness.normal}
+            style={{
+              marginTop: "1rem",
+              display: "flex",
+              gap: "1rem",
+              alignItems: "center",
+            }}
+          >
+            <span>
+              <i className="fa-solid fa-globe" style={{ color: "gray" }}></i>
+            </span>
+            <span>View on Etherscan</span>
+          </H5>
+          <H5
+            fontFamily={FontFamily.secondary}
+            boldness={Boldness.normal}
+            style={{
+              marginTop: "1rem",
+              display: "flex",
+              gap: "1rem",
+              alignItems: "center",
+            }}
+          >
+            <span>
+              <i className="fa-solid fa-globe" style={{ color: "gray" }}></i>
+            </span>
+            <span>View Original</span>
+          </H5>
+          <H5
+            fontFamily={FontFamily.secondary}
+            boldness={Boldness.bold}
+            style={{ marginTop: "2rem", color: "#858584" }}
+          >
+            Tags
+          </H5>
+        </div>
+        <div className={clsx(cn["tags-flex"])} style={{ marginTop: "1rem" }}>
+          <div className={clsx(cn["tag"])}>
+            <Base
+              fontFamily={FontFamily.secondary}
+              boldness={Boldness.semibold}
+            >
+              ANIMATION
+            </Base>
+          </div>
+          <div className={clsx(cn["tag"])}>
+            <Base
+              fontFamily={FontFamily.secondary}
+              boldness={Boldness.semibold}
+            >
+              ILLUSTRATION
+            </Base>
+          </div>
+          <div className={clsx(cn["tag"])}>
+            <Base
+              fontFamily={FontFamily.secondary}
+              boldness={Boldness.semibold}
+            >
+              MOON
+            </Base>
+          </div>
+          <div className={clsx(cn["tag"])}>
+            <Base
+              fontFamily={FontFamily.secondary}
+              boldness={Boldness.semibold}
+            >
+              MOON
+            </Base>
+          </div>
         </div>
       </div>
     </Container>
