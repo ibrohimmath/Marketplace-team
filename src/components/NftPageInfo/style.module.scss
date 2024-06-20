@@ -56,3 +56,17 @@
     width: 100%;
   }
 }
+.tags-flex {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tag {
+  background-color: #3b3b3b;
+  padding: 0.6rem 1.6rem;
+  border-radius: 20px;
+  color: white;
+}
