@@ -2,6 +2,17 @@ import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 
 import Container from "../../../Container";
+import {
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Base,
+  Caption,
+  FontFamily,
+  Boldness,
+} from "../../../Typography";
 import { Button, Type, Size } from "../../../Button";
 
 import logoSrc from "/public/Logo.png";
@@ -94,6 +105,14 @@ function Footer() {
               </div>
             </div>
           </footer>
+          <hr style={{ marginTop: "2rem" }} />
+          <Caption
+            fontFamily={FontFamily.secondary}
+            boldness={Boldness.normal}
+            style={{ marginTop: "1rem" }}
+          >
+            Ⓒ NFT Market. Use this template freely.
+          </Caption>
         </Container>
       </div>
     </>
