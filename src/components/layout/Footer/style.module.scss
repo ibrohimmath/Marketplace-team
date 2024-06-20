@@ -1,0 +1,41 @@
+.footer{
+  background-color: #333;
+  .footer_container{
+    padding: 2rem;
+    .footer_section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      h2{
+        font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+      ul{
+        li{
+          list-style: none;
+          margin: 15px 0; 
+          a{
+            text-decoration: none;
+            color: lightgray;
+          }
+        }
+      }
+      p{
+        color: lightgray;font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+  }
+  .footer_bottom{
+    display: flex;
+    justify-content: center;
+  }
+}
