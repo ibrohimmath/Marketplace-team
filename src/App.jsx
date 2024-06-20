@@ -7,6 +7,7 @@ import Marketplace from "./pages/marketplace";
 import Rankings from "./pages/rankings";
 import ConnectWallet from "./pages/connect_wallet";
 import Artist from "./pages/artist";
+import NftPage from "./pages/nft";
 
 import "./components/styles/global.scss";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "artist",
     element: <Artist />,
+  },
+  {
+    path: "nft",
+    element: <NftPage />,
   },
 ]);
 
