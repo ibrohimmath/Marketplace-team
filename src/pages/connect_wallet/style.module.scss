@@ -1,0 +1,63 @@
+.connect-wallet {
+  display: flex;
+  justify-content: space-between;
+  background-color: #232323;
+  color: #fff;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 150px;
+    h1 {
+      margin: 15px 0;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+      color: lightgray;
+    }
+    button {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: 30vw;
+      font-size: 1.5rem;
+      margin: 7px 0;
+      border: 1px solid #a259ff;
+      color: #fff;
+      border-radius: 22px;
+      padding: 0.37rem 1rem;
+    }
+  }
+  .img {
+    img {
+      width: 50vw;
+      height: 90vh;
+      margin: 0 25px 0 0px;
+    }
+  }
+  @media (max-width: 765px) {
+    div {
+      flex-direction: column;
+      text-align: center;
+      .text {
+        margin-right: 0px;
+        button {
+          width: 80%;
+          margin: 5px 50px;
+        }
+      }
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
