@@ -2,7 +2,17 @@ import React from "react";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
-import { H5 } from "../../../Typography";
+import {
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Base,
+  Caption,
+  FontFamily,
+  Boldness,
+} from "../../../Typography";
 import { Button, Type, Size } from "../../../Button";
 
 import LogoSrc from "/public/Logo.png";
@@ -27,17 +37,23 @@ function Nav() {
 
         <ul className={clsx(cn["nav__list"])}>
           <li className={clsx(cn["nav__item"])}>
-            <Link to="/marketplace">Marketplace</Link>
+            <Link to="/marketplace">
+              <Base fontFamily={FontFamily.secondary}>Marketplace</Base>
+            </Link>
           </li>
           <li className={clsx(cn["nav__item"])}>
-            <Link to="/rankings">Rankings</Link>
+            <Link to="/rankings">
+              <Base fontFamily={FontFamily.secondary}>Rankings</Base>
+            </Link>
           </li>
           <li className={clsx(cn["nav__item"])}>
-            <Link to="/connect-wallet">Connect a wallet</Link>
+            <Link to="/connect-wallet">
+              <Base fontFamily={FontFamily.secondary}>Connect a wallet</Base>
+            </Link>
           </li>
           <Link to="/create-account">
             <Button
-              size={Size.lg}
+              size={Size.md}
               type={Type.primary}
               icon={
                 <i

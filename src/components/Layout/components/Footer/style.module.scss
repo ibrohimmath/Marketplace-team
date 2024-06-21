@@ -1,8 +1,9 @@
 @import "../../../styles/variables.scss";
 
 .footer__wrapper {
-  background-color: $grayDark;
-  padding: 2rem 0;
+  // background-color: $grayDark;
+  padding: 2rem 0 !important;
+  background-color: #3b3b3b;
 }
 footer {
   display: grid;

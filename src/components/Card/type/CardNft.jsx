@@ -13,6 +13,7 @@ export default function CardNft({
   avatarName,
   price,
   bid,
+  contentBackground,
   style,
 }) {
   return (
@@ -26,7 +27,7 @@ export default function CardNft({
         avatarName={avatarName}
         price={price}
         bid={bid}
-        style={{ marginTop: "-2rem" }}
+        style={{ marginTop: "-2rem", backgroundColor: contentBackground }}
       />
     </div>
   );
