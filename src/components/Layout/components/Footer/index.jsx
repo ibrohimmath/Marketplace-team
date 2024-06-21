@@ -40,7 +40,7 @@ function Footer() {
   return (
     <>
       <div className={clsx(cn["footer__wrapper"])}>
-        <Container>
+        <Container style={{ backgroundColor: "#3B3B3B" }}>
           <footer>
             <div className={clsx(cn["card"])}>
               <img src={logoSrc} alt="Logo Image" />
