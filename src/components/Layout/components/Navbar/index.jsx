@@ -24,7 +24,9 @@ function Nav() {
     <header>
       <nav>
         <div className={clsx(cn["logo"])}>
-          <img src={LogoSrc} alt="Marketplace Logo" />
+          <Link to="/">
+            <img src={LogoSrc} alt="Marketplace Logo" />
+          </Link>
         </div>
         <input type="checkbox" id="check" />
         <label htmlFor="check" className={clsx(cn["open"])}>
@@ -49,6 +51,11 @@ function Nav() {
           <li className={clsx(cn["nav__item"])}>
             <Link to="/connect-wallet">
               <Base fontFamily={FontFamily.secondary}>Connect a wallet</Base>
+            </Link>
+          </li>
+          <li className={clsx(cn["nav__item"])}>
+            <Link to="/artist">
+              <Base fontFamily={FontFamily.secondary}>Artist</Base>
             </Link>
           </li>
           <Link to="/create-account">

@@ -30,7 +30,7 @@ export default function Content() {
         NFT marketplace UI created with Anima for Figma. Collect, buy and sell
         art from more than 20k NFT artists.
       </H5>
-      <Link to="start">
+      <Link to="/nft">
         <Button
           type={Type.primary}
           size={Size.lg}

@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 import {
   H1,
@@ -34,14 +35,16 @@ export default function Nft() {
         <H5 fontFamily={FontFamily.secondary} boldness={Boldness.normal}>
           Explore new trending NFTs
         </H5>
-        <Button
-          type={Type.secondary}
-          size={Size.lg}
-          icon={
-            <i className={clsx("fa-regular", "fa-eye", cn["btn__eye"])}></i>
-          }
-          text={"See all"}
-        />
+        <Link to="/nft">
+          <Button
+            type={Type.secondary}
+            size={Size.lg}
+            icon={
+              <i className={clsx("fa-regular", "fa-eye", cn["btn__eye"])}></i>
+            }
+            text={"See all"}
+          />
+        </Link>
       </div>
       <div className={clsx(cn["nft-grid"])}>
         <CardNft

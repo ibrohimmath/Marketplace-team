@@ -1,5 +1,7 @@
 import clsx from "clsx";
 import Container from "../../components/Container";
+import { Link } from "react-router-dom";
+
 import Layout from "../../components/Layout";
 import { ImgFull } from "../../components/Img";
 import NftPageInfo from "../../components/NftPageInfo";
@@ -81,12 +83,14 @@ function NftPage() {
           <H3 fontFamily={FontFamily.secondary} boldness={Boldness.semibold}>
             More From This Artist
           </H3>
-          <Button
-            type={Type.secondary}
-            size={Size.md}
-            icon={<i className="fa-solid fa-right-long"></i>}
-            text={"Go To Artist Page"}
-          />
+          <Link to="/artist">
+            <Button
+              type={Type.secondary}
+              size={Size.md}
+              icon={<i className="fa-solid fa-right-long"></i>}
+              text={"Go To Artist Page"}
+            />
+          </Link>
         </div>
         <div className={clsx(cn["nft-cards__grid"])}>
           {images.map((item, ind) => (

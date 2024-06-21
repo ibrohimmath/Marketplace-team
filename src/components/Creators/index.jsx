@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 import {
   H1,
@@ -68,16 +69,14 @@ export default function Creators() {
         <H5 fontFamily={FontFamily.secondary} boldness={Boldness.normal}>
           Checkout Top Rated Creators on the NFT Marketplace
         </H5>
-        {/* <Button type={"dark-primary"}>
-          <i className={clsx("fa-solid", "fa-rocket", cn["btn__rocket"])}></i>
-          &nbsp; View Rankings
-        </Button> */}
-        <Button
-          type={Type.secondary}
-          size={Size.lg}
-          icon={<i className={clsx("fa-solid", "fa-rocket")}></i>}
-          text="View Rankings"
-        />
+        <Link to="/rankings">
+          <Button
+            type={Type.secondary}
+            size={Size.lg}
+            icon={<i className={clsx("fa-solid", "fa-rocket")}></i>}
+            text="View Rankings"
+          />
+        </Link>
       </div>
 
       {/* <div className={clsx(cn["grid-creators"])}>

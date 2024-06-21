@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 import Container from "../Container";
 import {
@@ -32,15 +33,17 @@ export default function Mushroom() {
             Magic Mushrooms
           </H2>
 
-          <Button
-            size={Size.lg}
-            type={Type.tertiary}
-            icon={
-              <i className={clsx("fa-regular", "fa-eye", cn["btn__eye"])}></i>
-            }
-            text="See Nft"
-            style={{ backgroundColor: "red !important", color: "black" }}
-          ></Button>
+          <Link to="/nft">
+            <Button
+              size={Size.lg}
+              type={Type.tertiary}
+              icon={
+                <i className={clsx("fa-regular", "fa-eye", cn["btn__eye"])}></i>
+              }
+              text="See Nft"
+              style={{ backgroundColor: "red !important", color: "black" }}
+            ></Button>
+          </Link>
         </div>
         <div className={clsx(cn["timer-block"])}>
           <Caption fontFamily={FontFamily.primary} boldness={Boldness.semibold}>
