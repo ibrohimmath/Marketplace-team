@@ -1,0 +1,33 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    // width: 18em;
+    
+    input{
+        margin: 5px;
+        border-radius: 16px;
+        padding: 1rem;
+        border: 1px solid black;
+        outline: none;
+        height: 3.2rem;
+    }
+    button{
+        background-color: #6c5ce7;
+        color: aliceblue;
+        height: 3rem;
+        width: 18rem;
+        border: 1px solid #6c5ce7;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 765) {
+    form{
+        width: 100vw;
+    }
+        input{
+            width: 80vw;
+            margin: 5px auto;
+        }
+}
